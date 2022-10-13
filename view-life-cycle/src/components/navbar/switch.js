@@ -6,10 +6,13 @@ export default function Switch(props) {
     const {isOn} = props;
     const { darkMode, toggleDarkMode } = useContext(MainContext);
 
+    
     function handleChange(e) {
         toggleDarkMode(e, darkMode);
+        //setTimeout(toggleDarkMode(e, darkMode) , 2000);
     }
-
+    
+    
     return (
         <>
              <span>☀️</span>

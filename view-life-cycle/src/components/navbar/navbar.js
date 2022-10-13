@@ -7,7 +7,7 @@ function ProfileColor() {
 
     //const myContext = React.useContext(MainContext);
     const { darkMode } = React.useContext(MainContext);
-    const style = darkMode ? 'dark': 'ligth';
+    const style = darkMode ? 'dark': 'light';
     
     return (
         <div className={style }>
@@ -21,7 +21,7 @@ export default class Navbar extends Component{
     constructor(props) {
         super();
         
-        
+        setTimeout( () => { console.log("Se llamo luego de 2 seg"); }, 2000);
         
         console.log("Se construyo el navbar");
 
