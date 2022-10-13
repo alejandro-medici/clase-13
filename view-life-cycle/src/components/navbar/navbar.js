@@ -4,6 +4,8 @@ import MainContext from '../../context/MainContext';
 import './navbar.css';
 
 function ProfileColor() {
+
+    //const myContext = React.useContext(MainContext);
     const { darkMode } = React.useContext(MainContext);
     const style = darkMode ? 'dark': 'ligth';
     
